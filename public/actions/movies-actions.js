@@ -3,8 +3,8 @@ let moviesSearchAction = (searchString) => {
 	store.dispatch({
 		type: "MOVIE_SEARCH_INITIATED"
 	})
-
-	$.ajax({
+//each reducer has its own actions that we are grouping together
+	$.ajax({//makes call to the API
 		method: "GET",
 		url: "https://www.omdbapi.com/?apikey=3430a78&s="+encodeURIComponent(searchString)
 	}).then( (movieData) => {

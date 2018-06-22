@@ -16,3 +16,4 @@ const renderDogsApp = () => {
 
 	`
 }
+//returning HTML

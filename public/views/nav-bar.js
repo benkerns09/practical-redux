@@ -1,5 +1,5 @@
 const renderNavBar = () => {
-	let { navigation } = store.getState();
+	let { navigation } = store.getState();//pulling out the needed state, which is the navigation key
 
 	return `
 		<div>
