@@ -1,4 +1,4 @@
-let store = Redux.createStore(mainReducer);
+let store = Redux.createStore(mainReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 const renderApp = () => {
 	let navBar = document.getElementById("nav-bar");
@@ -11,7 +11,7 @@ const renderApp = () => {
 }
 
 store.subscribe(()=>{
-	renderApp();
+	renderApp();//notice render app is the only thing that was called
 });
 
 renderApp();

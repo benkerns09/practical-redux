@@ -9,3 +9,5 @@ let incrementAction = () => {
 		type: "INCREMENT_COUNTER"
 	})
 }
+
+//only will be dispatched when somone calls the action

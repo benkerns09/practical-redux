@@ -7,7 +7,7 @@ const navigationReducer = (state = "COUNTER", action) => {
 			"MOVIES",
 			"DOGS"
 		];
-		if (validDestinations.indexOf(destination) > -1){
+		if (validDestinations.indexOf(destination) > -1){//if it cant find it, it returns -1. Could also use != -1
 			return destination
 		} else {
 			return state

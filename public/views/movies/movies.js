@@ -1,6 +1,6 @@
 const renderMoviesApp = () => {
 	let { movies } = store.getState();
-	let { isLoading, movieList, error} = movies;
+	let { isLoading, movies, error} = movies;
 	
 	return `
 		<div>
